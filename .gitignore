@@ -1,13 +1,41 @@
-# macOS
+# ======================
+# OS (macOS)
+# ======================
 .DS_Store
 
-# Node
-node_modules
+# ======================
+# Node.js
+# ======================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
 
-# IDE
-.idea
-.vscode
+# ======================
+# IDE / Editor
+# ======================
+.idea/
+.vscode/
+*.swp
 
+# ======================
 # Java
-target
+# ======================
+target/
+build/
+out/
 *.class
+*.jar
+*.war
+*.ear
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# Environment variables
+# ======================
+.env

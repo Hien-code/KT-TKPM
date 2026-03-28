@@ -1,0 +1,16 @@
+FROM python:3.9
+
+# Set thư mục làm việc
+WORKDIR /app
+
+# Copy file
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY app.py .
+
+# Expose port
+EXPOSE 5000
+
+# Run app
+CMD ["python", "app.py"]
